@@ -76,3 +76,7 @@ background: linear-gradient(0deg, rgba(45,139,44,1) 1%, rgba(68,160,73,1) 8%, rg
 .card-body{
     padding: 1px;
 }
+#user-name{
+    font-size: large;
+    color: white;
+}
