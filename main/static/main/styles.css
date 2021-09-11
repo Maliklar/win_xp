@@ -1,0 +1,78 @@
+body{
+    background-image: url("/static/main/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: small;
+}
+
+#nav-bar{
+    height: 40px;
+    background: rgb(7,67,142);
+background: linear-gradient(0deg, rgba(7,67,142,1) 1%, rgba(9,107,227,1) 14%, rgba(9,107,227,1) 77%, rgba(199,214,233,1) 100%);
+    padding: 0px;
+    
+}
+#start-button{
+    background: rgb(45,139,44);
+background: linear-gradient(0deg, rgba(45,139,44,1) 1%, rgba(68,160,73,1) 8%, rgba(68,160,73,1) 88%, rgba(116,235,111,1) 100%);
+    margin: 0px;
+    height: 100%;
+    width: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: wheat;
+
+}
+#start-button>img{
+    width: 20px;
+}
+
+#start-menu{
+    position:absolute;
+    left: 0%;
+    bottom: 40px;
+    border-style: none;
+    border-top-right-radius: 20px;
+    font-size: small;
+
+}
+#start-menu-footer{
+    background: rgb(7,67,142);
+    background: linear-gradient(0deg, rgba(7,67,142,1) 1%, rgba(9,107,227,1) 14%, rgba(9,107,227,1) 77%, rgba(199,214,233,1) 100%);
+    color: white;
+
+}
+
+#start-menu-header{
+    background: rgb(7,67,142);
+    background: linear-gradient(0deg, rgba(7,67,142,1) 1%, rgba(9,107,227,1) 14%, rgba(9,107,227,1) 77%, rgba(199,214,233,1) 100%);
+    border-top-right-radius: 20px;
+
+}
+#menu-turn-off-icon{
+    width: 32px;
+    height: 32px;
+    
+}
+
+#menu-profile-image{
+    width: 64px;
+    height: 64px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+#start-menu-right{
+    background-color: #D3E5FB;
+    
+    
+}
+
+.app-icon{
+    width: 32px;
+    height: 32px;
+}
+
+.card-body{
+    padding: 1px;
+}
