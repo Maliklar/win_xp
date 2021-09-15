@@ -2,26 +2,23 @@ body{
     background-image: url("/static/main/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: small;
+    font-size: 11px;
 }
 
 #nav-bar{
-    height: 40px;
-    background: rgb(7,67,142);
-background: linear-gradient(0deg, rgba(7,67,142,1) 1%, rgba(9,107,227,1) 14%, rgba(9,107,227,1) 77%, rgba(199,214,233,1) 100%);
+    height: 30px;
     padding: 0px;
+    background: linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%)
     
 }
 #start-button{
-    background: rgb(45,139,44);
-background: linear-gradient(0deg, rgba(45,139,44,1) 1%, rgba(68,160,73,1) 8%, rgba(68,160,73,1) 88%, rgba(116,235,111,1) 100%);
     margin: 0px;
     height: 100%;
     width: 100px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: wheat;
-
+    background-image: url('start_btn_inactive.png');
+    background-size: cover;
+    background-color: transparent;
+    border: none;
 }
 #start-button>img{
     width: 20px;
@@ -30,37 +27,45 @@ background: linear-gradient(0deg, rgba(45,139,44,1) 1%, rgba(68,160,73,1) 8%, rg
 #start-menu{
     position:absolute;
     left: 0%;
-    bottom: 40px;
-    border-style: none;
-    border-top-right-radius: 20px;
-    font-size: small;
+    bottom: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(24, 104, 206);
+    font-size: 11px;
+    box-shadow:2px 4px 2px;
 
 }
 #start-menu-footer{
-    background: rgb(7,67,142);
-    background: linear-gradient(0deg, rgba(7,67,142,1) 1%, rgba(9,107,227,1) 14%, rgba(9,107,227,1) 77%, rgba(199,214,233,1) 100%);
+    background: linear-gradient(rgb(66, 130, 214) 0%, rgb(59, 133, 224) 3%, rgb(65, 138, 227) 5%, rgb(65, 138, 227) 17%, rgb(60, 135, 226) 21%, rgb(55, 134, 228) 26%, rgb(52, 130, 227) 29%, rgb(46, 126, 225) 39%, rgb(35, 116, 223) 49%, rgb(32, 114, 219) 57%, rgb(25, 110, 219) 62%, rgb(23, 107, 216) 72%, rgb(20, 104, 213) 75%, rgb(17, 101, 210) 83%, rgb(15, 97, 203) 88%);
     color: white;
+    height: 36px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 500;
 
 }
 
 #start-menu-header{
-    background: rgb(7,67,142);
-    background: linear-gradient(0deg, rgba(7,67,142,1) 1%, rgba(9,107,227,1) 14%, rgba(9,107,227,1) 77%, rgba(199,214,233,1) 100%);
-    border-top-right-radius: 20px;
+    background-color: rgb(66, 130, 214);
+    background: linear-gradient(rgb(24, 104, 206) 0%, rgb(14, 96, 203) 12%, rgb(14, 96, 203) 20%, rgb(17, 100, 207) 32%, rgb(22, 103, 207) 33%, rgb(27, 108, 211) 47%, rgb(30, 112, 217) 54%, rgb(36, 118, 220) 60%, rgb(41, 122, 224) 65%, rgb(52, 130, 227) 77%, rgb(55, 134, 229) 79%, rgb(66, 142, 233) 90%, rgb(71, 145, 235) 100%);;
+    height: 54px;
 
 }
 #menu-turn-off-icon{
-    width: 32px;
-    height: 32px;
+    height: 100%;
     
 }
 
 #menu-profile-image{
-    width: 64px;
-    height: 64px;
+    width: 42px;
+    height: 42px;
     border-color: white;
     border-style: solid;
-    border-radius: 10px;
+    border-width: 2px;
+    border-radius: 3px;
 }
 #start-menu-right{
     background-color: #D3E5FB;
@@ -69,14 +74,30 @@ background: linear-gradient(0deg, rgba(45,139,44,1) 1%, rgba(68,160,73,1) 8%, rg
 }
 
 .app-icon{
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
 }
 
 .card-body{
     padding: 1px;
 }
 #user-name{
-    font-size: large;
+    font-size: 14px;
     color: white;
+}
+
+.extend-icon{
+    height: 18px;
+}
+
+.divider{
+        height: 7.5px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%) content-box;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.menu-item{
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
