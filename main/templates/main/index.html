@@ -12,6 +12,12 @@
         <nav id="nav-bar" class="navbar fixed-bottom">
             
                 <button id="start-button"></button>
+                <div class="d-flex" id="right-bar">
+                    <img src="{% static '/main/usb_tray.png' %}" style="margin-left: 3px; margin-right: 3px;">
+                    <img src="{% static '/main/speaker_tray.png' %}" style="margin-left: 3px; margin-right: 3px;">
+                    <img src="{% static '/main/defender_tray.png' %}" style="margin-left: 3px; margin-right: 3px;">
+                    <div class="time">12:55 AM</div>
+                </div>
             
         </nav>
         <div class="card" id="start-menu" style="width: 380px;">
@@ -38,7 +44,7 @@
                                 <div class="menu-item">
                                     <div class="d-flex flex-row bd-highlight ">
                                         <div class="col-3">
-                                            <img class="app-icon" src="{% static '/main/ie_icon.png' %}">
+                                            <img class="app-icon" src="{% static '/main/email_icon.png' %}">
                                         </div>
                                         <div class="col">
                                             <strong class="menu-title">E-mail</strong>
@@ -50,10 +56,10 @@
                                 <div class="menu-item">
                                     <div class="d-flex flex-row bd-highlight align-items-center">
                                         <div class="col-3">
-                                            <img class="app-icon" src="{% static '/main/cmd.png' %}">
+                                            <img class="app-icon" src="{% static '/main/game_icon.png' %}">
                                         </div>
                                         <div class="col ">
-                                            <strong class="menu-title ">Command Prompt</strong>
+                                            <strong class="menu-title ">Minesweeper</strong>
                                         </div>
                                     </div>
                                 
@@ -61,10 +67,10 @@
                                 <div class="menu-item">
                                     <div class="d-flex flex-row bd-highlight align-items-center">
                                         <div class="col-3">
-                                            <img class="app-icon" src="{% static '/main/ie_icon.png' %}">
+                                            <img class="app-icon" src="{% static '/main/notepad.png' %}">
                                         </div>
                                         <div class="col ">
-                                            <strong class="menu-title ">MSN</strong>
+                                            <strong class="menu-title ">Notepad</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -113,8 +119,8 @@
                                     
                                 </div>
                                 <div class="divider"></div>
-                                <div class="menu-item">
-                                    <div class="d-flex flex-row bd-highlight align-items-center">
+                                <div class="menu-item" id="bottom-item">
+                                    <div class="d-flex flex-row bd-highlight justify-content-evenly">
                                         <div class="col-2">
                                         </div>
                                         <div class="col-8">
@@ -124,41 +130,151 @@
                                             <img class="extend-icon" src="{% static '/main/246.ico' %}">
                                         </div>
                                     </div>
-                                     
                                 </div>
                                     
                             </div>
                         </div>
-                        <div class="col" id="start-menu-right">
-                            <table>
-                                <tr>
-                                    <td>Internet</td>
-                                </tr>
-                                <tr>
-                                    <td>E-mail</td>
-                                </tr>
-                                <tr>
-                                    <td>Command Prompt</td>
-                    
-                                </tr>
-                    
-                                <tr>
-                                    <td>MSN</td>
-                                </tr>
-                                <tr>
-                                    <td>Windows Media Player</td>
-                                </tr>
-                                <tr>
-                                    <td>Windows Messenger</td>
-                                </tr>
-                                <tr>
-                                    <td>Notpad</td>
-                                </tr>
-                                <tr>
-                                    <td>Paint</td>
-                                </tr>
-                            </table>
+                        
+
+
+
+
+
+
+                        <div class="col" id= "start-menu-right">
+                            <div class="menu ">
+                            <div class="right-menu-item">
+                                <div class="d-flex flex-row bd-highlight align-items-center">
+                                    <div class="col-3">
+                                        <img class="app-icon" src="{% static '/main/my_documents.png' %}">
+                                    </div>
+                                    <div class="col ">
+                                        <strong class="menu-title ">My Documnets</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-menu-item">
+                                <div class="d-flex flex-row bd-highlight align-items-center">
+                                    <div class="col-3">
+                                        <img class="app-icon" src="{% static '/main/recent_docs.png' %}">
+                                    </div>
+                                    <div class="col ">
+                                        <strong class="menu-title ">My Recent Documents</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-menu-item">
+                                <div class="d-flex flex-row bd-highlight align-items-center">
+                                    <div class="col-3">
+                                        <img class="app-icon" src="{% static '/main/my_pics.png' %}">
+                                    </div>
+                                    <div class="col ">
+                                        <strong class="menu-title ">My Pictures</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-menu-item">
+                                <div class="d-flex flex-row bd-highlight align-items-center">
+                                    <div class="col-3">
+                                        <img class="app-icon" src="{% static '/main/my_music.png' %}">
+                                    </div>
+                                    <div class="col ">
+                                        <strong class="menu-title ">My Music</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-menu-item">
+                                <div class="d-flex flex-row bd-highlight align-items-center">
+                                    <div class="col-3">
+                                        <img class="app-icon" src="{% static '/main/my_computer.png' %}">
+                                    </div>
+                                    <div class="col ">
+                                        <strong class="menu-title ">My Computer</strong>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="divider"></div>
+                                <div class="right-menu-item">
+                                    <div class="d-flex flex-row bd-highlight align-items-center">
+                                        <div class="col-3">
+                                            <img class="app-icon" src="{% static '/main/cp.png' %}">
+                                        </div>
+                                        <div class="col ">
+                                            <strong class="menu-title ">Control Panel</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-menu-item">
+                                    <div class="d-flex flex-row bd-highlight align-items-center">
+                                        <div class="col-3">
+                                            <img class="app-icon" src="{% static '/main/set_default.png' %}">
+                                        </div>
+                                        <div class="col ">
+                                            <strong class="menu-title ">Set Program Access and Defaults</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-menu-item">
+                                    <div class="d-flex flex-row bd-highlight align-items-center">
+                                        <div class="col-3">
+                                            <img class="app-icon" src="{% static '/main/connect.png' %}">
+                                        </div>
+                                        <div class="col ">
+                                            <strong class="menu-title ">Connect To</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-menu-item">
+                                    <div class="d-flex flex-row bd-highlight align-items-center">
+                                        <div class="col-3">
+                                            <img class="app-icon" src="{% static '/main/printer.png' %}">
+                                        </div>
+                                        <div class="col ">
+                                            <strong class="menu-title ">Printers and Faxes</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+
+                                <div class="right-menu-item">
+                                    <div class="d-flex flex-row bd-highlight align-items-center">
+                                        <div class="col-3">
+                                            <img class="app-icon" src="{% static '/main/help.png' %}">
+                                        </div>
+                                        <div class="col ">
+                                            <strong class="menu-title ">Help and Support</strong>
+                                        </div>
+                                    </div>
+                        
+                        
+                                </div>
+                                <div class="right-menu-item">
+                                    <div class="d-flex flex-row bd-highlight align-items-center">
+                                        <div class="col-3">
+                                            <img class="app-icon" src="{% static '/main/search.png' %}">
+                                        </div>
+                                        <div class="col ">
+                                            <strong class="menu-title ">Search</strong>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="right-menu-item">
+                                        <div class="d-flex flex-row bd-highlight align-items-center">
+                                            <div class="col-3">
+                                                <img class="app-icon" src="{% static '/main/run.png' %}">
+                                            </div>
+                                            <div class="col ">
+                                                <strong class="menu-title ">Run...</strong>
+                                            </div>
+                                        </div>
+                        
+                        
+                                </div>
+                                
+                        
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
 
