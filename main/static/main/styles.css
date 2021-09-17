@@ -180,8 +180,8 @@ body{
 
 #file-explorer{
     position: absolute;
-    width: 800px;
-    height: 200px;
+    width: 500px;
+    height: 400px;
     left: 200px;
     top: 200px;
     background-color: white;
@@ -197,6 +197,19 @@ body{
     margin: 0px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+.container-header>div{
+    height: 100%;
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: "Noto Sans";
+    color: white;
+    padding-right: 5px;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .container-toolbar{
@@ -221,4 +234,16 @@ body{
     position: relative;
     height: 100%;
     text-align: center;
+}
+
+
+#explo-app{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.container-toolbar>div{
+    height: 100%;
+    align-items: center;
 }

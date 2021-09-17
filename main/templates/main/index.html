@@ -20,6 +20,18 @@
                 </div>
             
         </nav>
+
+        <!-- Desktop apps are placed here -->
+        <div class="desk-app" id="explo-app">
+            <div class="container text-center">
+                <img src="{% static '/main/ie_icon.png' %}">
+                <div>Internet Explorer</div>
+            </div>
+            
+        </div>
+
+
+
         <div class="card" id="start-menu" style="width: 380px;">
             <div class="card-header" id="start-menu-header">
             <img id="menu-profile-image" src="{% static '/main/chess_profile.jpg' %}"> <strong id="user-name">New User</strong>
@@ -291,11 +303,19 @@
         <!-- Programes containers (the program itself) -->
         <div class="container"  id="file-explorer">
             <div class="container-header">
-                <div class="d-flex align-items-center">
-                <img src="{% static '/main/my_computer_tray.png' %}">
-                My Computer
+                <div class="d-flex justify-content-between">
+                    <div class="container-header-left">
+                        <img src="{% static '/main/my_computer_tray.png' %}">
+                        My Computer
+                    </div>
+                    <div class="container-header-right">
+                        <img src="{% static 'main/window_minimize.png' %}">
+                        <img src="{% static 'main/window_maximize.png' %}">
+                        <img src="{% static 'main/window_close.png' %}">
+                    </div>
                 </div>
             </div>
+            
             <div class="container-toolbar">
                 <div class="d-flex align-items-center">
                     <div class="header-item">File</div>
