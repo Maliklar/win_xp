@@ -11,7 +11,7 @@
     <body>
         <nav id="nav-bar" class="navbar fixed-bottom">
             
-                <button id="start-button"></button>
+                <button id="start-button" onclick="startButton()"></button>
                 <div class="d-flex" id="right-bar">
                     <img src="{% static '/main/usb_tray.png' %}" style="margin-left: 3px; margin-right: 3px;">
                     <img src="{% static '/main/speaker_tray.png' %}" style="margin-left: 3px; margin-right: 3px;">
@@ -317,4 +317,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="{% static 'main/index.js' %}"></script>
 </html>
